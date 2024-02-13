@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>Mis Redes Sociales</title>
+  <style>
+    @keyframes bounce {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    body {
+      background-color: rgb(76, 0, 255);
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .logo {
+      position: absolute;
+      top: 40px;
+      left: 30px;
+      width: 140px;
+      height: 50px;
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      animation: bounce 1s infinite;
+      font-family: 'Roboto', sans-serif;
+      color: rgb(13, 0, 33);
+    }
+
+    .subtitle {
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      animation: bounce 1s infinite;
+      font-family: 'Roboto', sans-serif;
+      color: rgb(29, 0, 77);
+    }
+
+    .button {
+      background-color: rgb(0, 34, 255);
+      color: white;
+      padding: 10px 20px;
+      margin: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      width: 150px;
+    }
+
+    .button:hover {
+      background-color: rgb(0, 238, 255);
+    }
+
+    .button img {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+      animation: bounce 2s infinite;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img class="logo" src="img/4.png" alt="Logo">
+    <h1 class="title">MIS REDES SOCIALES</h1>
+    <h2 class="subtitle">Bienvenido</h2>
+    <button class="button" onclick="window.open('https://www.google.com')">
+      <img src="img/w.png" alt="Google">
+      Whatsapp
+    </button>
+    <button class="button" onclick="window.open('https://www.facebook.com')">
+      <img src="img/face.svg" alt="Facebook">
+      Fcebook
+    </button>
+    <button class="button" onclick="window.open('https://www.twitter.com')">
+      <img src="img/ins.png" alt="Twitter">
+      Instagram
+    </button>
+    <button class="button" onclick="window.open('https://www.instagram.com')">
+      <img src="img/tw.png" alt="Instagram">
+      Twiter
+    </button>
+    <button class="button" onclick="window.open('https://www.linkedin.com')">
+      <img src="img/lin.png" alt="LinkedIn">
+      LinkedIn
+    </button>
+  </div>
+</body>
+</html>

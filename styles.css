@@ -1,0 +1,11 @@
+#redes-sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .red-social {
+    margin: 0 10px;
+    width: 30px;
+    height: 30px;
+  }
