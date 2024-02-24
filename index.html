@@ -17,7 +17,8 @@
     }
 
     body {
-      background-color: rgb(24, 34, 82);
+      background-image: url("FONDO.jpg");
+      background-size: cover;
       margin: 0;
       padding: 0;
       font-family: 'Roboto', sans-serif;
@@ -35,11 +36,11 @@
     }
 
     .logo {
-      position: absolute;
-      top: 40px;
-      left: 30px;
       width: 140px;
       height: 50px;
+      position: absolute;
+      top: 30px;
+      left: 30px;
     }
 
     .title {
@@ -47,7 +48,8 @@
       font-weight: bold;
       margin-bottom: 10px;
       animation: bounce 1s infinite;
-      color: rgb(0, 255, 251);
+      color: rgb(255, 251, 0);
+      text-align: center;
     }
 
     .subtitle {
@@ -55,18 +57,19 @@
       font-weight: bold;
       margin-bottom: 20px;
       animation: bounce 1s infinite;
-      color: rgb(255, 255, 255);
+      color: rgb(197, 255, 189);
+      text-align: center;
     }
 
     .button-container {
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
       margin-top: 20px;
     }
 
     .button {
-      background-color: rgb(0, 34, 255);
+      background-color: rgb(16, 0, 73);
       color: white;
       padding: 10px 20px;
       margin: 10px;
@@ -90,13 +93,69 @@
       margin-right: 10px;
       animation: bounce 2s infinite;
     }
+
+    .top-right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      font-size: 14px;
+      color: white;
+    }
+
+    .top-right a {
+      color: white;
+      text-decoration: none;
+      transition: transform 0.3s, color 0.3s;
+    }
+
+    .top-right a:hover {
+      transform: scale(1.1);
+      color: rgb(255, 0, 85);
+    }
+
+    @media (max-width: 600px) {
+      /* Estilos para pantallas de 600px o menos */
+      .container {
+        padding: 10px;
+        height: auto;
+      }
+
+      .logo {
+        width: 100px;
+        height: 35px;
+      }
+
+      .title {
+        font-size: 20px;
+      }
+
+      .subtitle {
+        font-size: 12px;
+      }
+
+      .button {
+        font-size: 14px;
+      }
+
+      .button img {
+        width: 25px;
+        height: 25px;
+      }
+
+      .top-right {
+        gap: 10px;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <img class="logo" src="4.png" alt="Logo">
-    <h1 class="title">BIENVENIDOS A MIS REDES SOCIALES</h1>
-    <h2 class="subtitle">Mis links</h2>
+    <h1 class="title">Mis Redes Sociales</h1>
+    <h2 class="subtitle">Conéctate conmigo en las siguientes redes:</h2>
     <div class="button-container">
       <button class="button" onclick="window.open('https://www.Whatsapp.com')">
         <img src="w.png" alt="Google">
@@ -110,14 +169,18 @@
         <img src="ins.png" alt="Twitter">
         Instagram
       </button>
-      <button class="button" onclick="window.open('https://www.Twitter.com')">
-        <img src="tw.png" alt="Instagram">
-        Twitter
+      <button class="button" onclick="window.open('https://www.tiktok.com/es/')">
+        <img src="tiktok.png" alt="Instagram">
+        Tiktok
       </button>
-      <button class="button" onclick="window.open('https://www.linkedin.com')">
-        <img src="lin.png" alt="LinkedIn">
-        LinkedIn
+      <button class="button" onclick="window.open('https://www.google.com/maps/place/Huancayo/@-12.059712,-75.214643,14z/data=!4m6!3m5!1s0x910e964104fb82f1:0xf8e45b61c55982fa!8m2!3d-12.0686357!4d-75.2102976!16zL20vMDVwczRq?entry=ttu')">
+        <img src="ma.png" alt="LinkedIn">
+        Ubicación
       </button>
+    </div>
+    <div class="top-right">
+      <a href="#">Iniciar sesión</a>
+      <a href="#">Registrarse</a>
     </div>
   </div>
 </body>

@@ -1,11 +1,13 @@
-#redes-sociales {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media (max-width: 600px) {
+  /* Aquí puedes agregar tus reglas de estilo para pantallas de 600px o menos */
+  /* Por ejemplo: */
+  body {
+    font-size: 16px;
+    color: #333;
   }
-  
-  .red-social {
-    margin: 0 10px;
-    width: 30px;
-    height: 30px;
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
   }
+}
